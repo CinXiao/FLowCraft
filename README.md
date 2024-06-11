@@ -6,9 +6,9 @@
 （4） 用户可以针对单个节点进行单独测试：系统应提供一个单元测试模块，允许用户选择特定的节点并输入测试数据，然后运行节点的脚本代码进行测试。测试结果应该即时反馈给用户，以帮助用户验证节点的功能和逻辑是否正确。<br>
 （5） 集成开发环境（IDE）：系统提供一个类似于IDE的编辑器界面，用户可以在其中编写脚本和节点代码。该编辑器可以帮助用户编写更加规范和高效的代码。<br>
 ![image](https://github.com/CinXiao/FLowCraft/assets/54227677/c0d7b548-6d55-4134-9f0e-04b26596eaf1)
-![image](https://github.com/CinXiao/FLowCraft/assets/54227677/ec2a8e22-db36-4259-ab5a-fbe393ea67bb)
 ![image](https://github.com/CinXiao/FLowCraft/assets/54227677/be850f71-7aa9-4502-9f13-042dbbf7e53d)
 ![image](https://github.com/CinXiao/FLowCraft/assets/54227677/d662e3bb-6880-49a8-a45b-32d3b84bcf94)
 ![image](https://github.com/CinXiao/FLowCraft/assets/54227677/24a03caa-e6ce-4bf2-a116-63665b515a2d)
+![image](https://github.com/CinXiao/FLowCraft/assets/54227677/7d4d6b3f-39bc-432b-91ea-9a8bccfb21a3)
 
 
