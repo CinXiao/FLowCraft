@@ -1,0 +1,160 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/矩阵/44矩阵输入.xs",
+	"name":"4×4矩阵输入",
+	"w":180,
+	"h":185,
+	"th":50,
+	"tw":180,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+
+
+{
+      "type": "Text",
+      "info": {
+    	"size":[5, 65, 20, 20],
+	"backColor":"#222222",
+	"index":0,
+	"text":"0"
+      }
+  },{
+      "type": "Text",
+      "info": {
+    	"size":[45, 65, 20, 20],
+	"backColor":"#222222",
+	"index":1,
+	"text":"0"
+      }
+  },{
+      "type": "Text",
+      "info": {
+    	"size":[85, 65, 20, 20],
+	"backColor":"#222222",
+	"index":2,
+	"text":"0"
+      }
+  },{
+      "type": "Text",
+      "info": {
+    	"size":[125, 65, 20, 20],
+	"backColor":"#222222",
+	"index":3,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[5, 95, 20, 20],
+	"backColor":"#222222",
+	"index":4,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[45, 95, 20, 20],
+	"backColor":"#222222",
+	"index":5,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[85, 95, 20, 20],
+	"backColor":"#222222",
+	"index":6,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[125, 95, 20, 20],
+	"backColor":"#222222",
+	"index":7,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[5, 125, 20, 20],
+	"backColor":"#222222",
+	"index":8,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[45, 125, 20, 20],
+	"backColor":"#222222",
+	"index":9,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[85, 125, 20, 20],
+	"backColor":"#222222",
+	"index":10,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[125, 125, 20, 20],
+	"backColor":"#222222",
+	"index":11,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[5, 155, 20, 20],
+	"backColor":"#222222",
+	"index":12,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[45, 155, 20, 20],
+	"backColor":"#222222",
+	"index":13,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[85, 155, 20, 20],
+	"backColor":"#222222",
+	"index":14,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[125, 155, 20, 20],
+	"backColor":"#222222",
+	"index":15,
+	"text":"0"
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[155, 45, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataOutput",
+	"index":1
+	
+      }
+    }
+
+  ]
+}

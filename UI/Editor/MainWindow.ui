@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1286</width>
+    <height>821</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: white;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item row="0" column="3" rowspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QTabWidget {  
+    border: none;  
+}  
+  
+QTabWidget::pane {  
+    border: none;  
+    top: 5px;  
+}  
+  
+QTabBar {  
+    border: none;  
+}  
+  
+QTabBar::tab {  
+    border: none;  
+    color: #333333;  
+    background-color: white;
+    font-family: &quot;微软雅黑&quot;;  
+    font-size: 14px;  
+    padding: 10px 10px; /* 使用正值内填充 */  
+    margin-right: 10px; /* 根据需要调整标签之间的间距 */  
+}  
+  
+QTabBar::tab:selected, QTabBar::tab:hover {  
+    border-bottom: 2px solid #618BE5;  
+    color: #618BE5;  
+    background: transparent;  
+}  
+  
+QTabWidget::tab-bar {  
+    alignment: left;  
+    top: 5px;  
+    left: 5px;  
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="MainViewtab">
+       <attribute name="title">
+        <string>视图</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QGraphicsView" name="MainView"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QWidget" name="leftwidget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>260</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QGraphicsView" name="preview">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>250</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>65535</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QWidget" name="attribute" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="QWidget" name="PropertyBrowser" native="true"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QTreeWidget" name="GraphicsObjectTree">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>300</height>
+              </size>
+             </property>
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>设计</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="1" column="1">
+         <widget class="QPlainTextEdit" name="designTextEdit"/>
+        </item>
+        <item row="0" column="0" rowspan="2">
+         <widget class="QTreeWidget" name="resourceTreeWidget">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGraphicsView" name="designView">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>250</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>250</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>测试</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>1</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item row="0" column="2" rowspan="2" colspan="2">
+         <widget class="QWidget" name="widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="testcodeahead">
+             <property name="styleSheet">
+              <string notr="true">QRadioButton{
+    spacing: 2px;
+    color: black;
+}
+QRadioButton::indicator {
+    width: 25px;
+    height: 25px;
+}
+QRadioButton::indicator:unchecked {
+	image: url(:/NodeData/icon/radiobutton_false.png);
+}
+QRadioButton::indicator:checked {
+	image: url(:/NodeData/icon/radiobutton_true.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>测试代码在前</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QPlainTextEdit" name="testcodeEdit"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="testcodeback">
+             <property name="styleSheet">
+              <string notr="true">QRadioButton{
+    spacing: 2px;
+    color: black;
+}
+QRadioButton::indicator {
+    width: 25px;
+    height: 25px;
+}
+QRadioButton::indicator:unchecked {
+	image: url(:/NodeData/icon/radiobutton_false.png);
+}
+QRadioButton::indicator:checked {
+	image: url(:/NodeData/icon/radiobutton_true.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>测试代码在后</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pushButton">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.073);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+    border-radius: 5px;
+
+	font: 14pt &quot;Microsoft YaHei UI&quot;;
+    padding: 5px 12px 6px 12px;
+    outline: none;
+}
+
+
+QPushButton[isPlaceholderText=true] {
+    color: rgba(0, 0, 0, 0.6063);
+}
+
+QPushButton[hasIcon=false] {
+    padding: 5px 12px 6px 12px;
+}
+
+QPushButton[hasIcon=true] {
+    padding: 5px 12px 6px 36px;
+}
+
+
+QPushButton:hover {
+    background: rgba(249, 249, 249, 0.5);
+}
+
+QPushButton:pressed{
+    color: rgba(0, 0, 0, 0.63);
+    background: rgba(249, 249, 249, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.073);
+}
+
+QPushButton:disabled {
+    color: rgba(0, 0, 0, 0.36);
+    background: rgba(249, 249, 249, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>测试</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../Resource/Resource.qrc">
+               <normaloff>:/NodeData/icon/run.png</normaloff>:/NodeData/icon/run.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QRadioButton" name="onlytestcode">
+             <property name="styleSheet">
+              <string notr="true">QRadioButton{
+    spacing: 2px;
+    color: black;
+}
+QRadioButton::indicator {
+    width: 25px;
+    height: 25px;
+}
+QRadioButton::indicator:unchecked {
+	image: url(:/NodeData/icon/radiobutton_false.png);
+}
+QRadioButton::indicator:checked {
+	image: url(:/NodeData/icon/radiobutton_true.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>只有测试代码</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGraphicsView" name="testView">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>400</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" rowspan="2">
+         <widget class="QTreeWidget" name="test_nodelist">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>帮助</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="helpTextBrower">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;title&gt;Simple HTML Page&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:xx-large; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1286</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>项目</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="actionclose"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="projectSetting"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actionAttributeView"/>
+    <addaction name="actionpreviewView"/>
+    <addaction name="actionToolView"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>生成</string>
+    </property>
+    <addaction name="actionCheck"/>
+    <addaction name="actionRun"/>
+    <addaction name="actionrunonce"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="actionNodeEditor"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionclose"/>
+   <addaction name="projectSetting"/>
+   <addaction name="separator"/>
+   <addaction name="actionnew"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionsave_as"/>
+   <addaction name="separator"/>
+   <addaction name="actionCheck"/>
+   <addaction name="actionrunonce"/>
+   <addaction name="actionRun"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/new.png</normaloff>:/NodeData/icon/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/save.png</normaloff>:/NodeData/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/saveAs.png</normaloff>:/NodeData/icon/saveAs.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/clsoe.png</normaloff>:/NodeData/icon/clsoe.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionCheck">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/check.png</normaloff>:/NodeData/icon/check.png</iconset>
+   </property>
+   <property name="text">
+    <string>检查</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/run.png</normaloff>:/NodeData/icon/run.png</iconset>
+   </property>
+   <property name="text">
+    <string>持续运行</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/help.png</normaloff>:/NodeData/icon/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionNodeEditor">
+   <property name="icon">
+    <iconset theme="application-exit"/>
+   </property>
+   <property name="text">
+    <string>节点编辑器</string>
+   </property>
+  </action>
+  <action name="projectSetting">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/setting.png</normaloff>:/NodeData/icon/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>项目设置</string>
+   </property>
+  </action>
+  <action name="actionrunonce">
+   <property name="icon">
+    <iconset resource="../../Resource/Resource.qrc">
+     <normaloff>:/NodeData/icon/runonce.png</normaloff>:/NodeData/icon/runonce.png</iconset>
+   </property>
+   <property name="text">
+    <string>单步运行</string>
+   </property>
+  </action>
+  <action name="actionAttributeView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>属性</string>
+   </property>
+  </action>
+  <action name="actionpreviewView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>预览</string>
+   </property>
+  </action>
+  <action name="actionNodeListView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>节点列表</string>
+   </property>
+  </action>
+  <action name="actionToolView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>工具栏</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../Resource/Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

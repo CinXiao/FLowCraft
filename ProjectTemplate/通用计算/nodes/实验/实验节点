@@ -1,0 +1,76 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "实验节点",
+    "scriptPath":"script/实验/test.xs",
+    "backgroundSize": [ 0, 0, 120, 150 ],
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "radius": 10,
+    "backgroundColor1": "#FF000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#FF800080",
+    "titleBackgroundColor2": "#FF0000CC",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "titleSize": [ 0, 0, 120, 40 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 5, 20, 20 ],
+        "portIndex": 0,
+        "portType": "ProgramControlInput"
+      }
+    },{
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 5, 20, 20 ],
+        "portIndex": 0,
+        "portType": "ProgramControlOutput"
+      }
+    },{
+      "controlType": "Port",
+      "info":{
+      "portSize": [ 90, 65, 20, 20 ],
+      "portIndex": 1,
+      "portType": "DataOutput",
+      "portDataType": "Float"
+      }
+    },{
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 95, 20, 20 ],
+        "portIndex": 2,
+        "portType": "DataOutput",
+        "portDataType": "Int"
+      }
+    },{
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 125, 20, 20 ],
+      "portIndex": 3,
+      "portType": "DataOutput",
+      "portDataType": "Bool"
+      }
+    },
+    {
+      "controlType": "Text",
+      "info":{
+        "inputSize": [ 5, 95, 50, 20 ],
+        "backgroundColor":"#fffff99",
+        "textColor":"#ffffffff",
+        "text":"input",
+        "inputIndex":1
+      }
+    }
+  ]
+  
+}

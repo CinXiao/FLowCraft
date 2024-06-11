@@ -1,0 +1,254 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "计算器界面",
+    "scriptPath":"script/实验/计算器.xs",
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "backgroundColor1": "#FF000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#00000000",
+    "titleBackgroundColor2": "#00000000",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "radius": 10,
+    "titleSize": [ 0, 0, 190, 40 ],
+    "backgroundSize": [ 0, 0, 190,350 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 160, 5, 20, 20 ],
+        "portIndex": 0,
+        "portType": "ProgramControlOutput"
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 5, 20, 20 ],
+        "portIndex": 0,
+        "portType": "ProgramControlInput"
+      }
+    },  
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [5, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataIntput",
+        "portDataType": "String"
+      }
+    },  
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [5, 85, 20, 20 ],
+        "portIndex": 2,
+        "portType": "DataIntput",
+        "portDataType": "String"
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[5,115,40,40],
+      "buttonText":"7",
+      "buttonTextColor":"#ffffff",
+      "buttonTextPressColor":"",
+      "buttonColor":"#2f2f2f",
+      "buttonPressColor":"", 
+      "buttonIndex":7
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[50,115,40,40],
+        "buttonText":"8",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":8
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[95,115,40,40],
+        "buttonText":"9",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":9
+      }
+    } ,  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[140,115,40,40],
+        "buttonText":"+",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":11
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[5,160,40,40],
+        "buttonText":"4",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":4
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[50,160,40,40],
+        "buttonText":"5",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":5
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[95,160,40,40],
+        "buttonText":"6",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":6
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[140,160,40,40],
+        "buttonText":"-",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":12
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[5,205,40,40],
+        "buttonText":"1",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":1
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[50,205,40,40],
+        "buttonText":"2",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":2
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[95,205,40,40],
+        "buttonText":"3",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":3
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[140,205,40,40],
+        "buttonText":"X",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":13
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[5,250,40,40],
+        "buttonText":"0",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":0
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[50,250,40,40],
+        "buttonText":".",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":16
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[95,250,40,40],
+      "buttonText":"=",
+      "buttonTextColor":"#ffffff",
+      "buttonTextPressColor":"",
+      "buttonColor":"#2f2f2f",
+      "buttonPressColor":"", 
+      "buttonIndex":15
+      }
+    },  
+    {
+      "controlType": "Button",
+      "info":{
+        "buttonSize":[140,250,40,40],
+        "buttonText":"÷",
+        "buttonTextColor":"#ffffff",
+        "buttonTextPressColor":"",
+        "buttonColor":"#2f2f2f",
+        "buttonPressColor":"", 
+        "buttonIndex":14
+      }
+    }
+  ]
+
+  
+}

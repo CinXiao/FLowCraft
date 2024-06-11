@@ -1,0 +1,74 @@
+﻿
+/* 表格样式 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* A 标签样式 */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* H2 标签样式 */
+h2 {
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    color: #666;
+    font-size: 20px;
+}
+/* P 标签样式 */
+p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+
+
+/* 一级列表项链接样式 */
+ul > li > a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+ul li {
+    margin-bottom: 10px; /*设置每个列表项之间的垂直间距为5像素 */
+}
+/* 二级列表项样式 */
+ul > li > ul {
+    list-style-type: none;
+}
+
+    /* 二级列表项链接样式 */
+    ul > li > ul > li > a {
+        color: #007bff;
+        text-decoration: none;
+    }

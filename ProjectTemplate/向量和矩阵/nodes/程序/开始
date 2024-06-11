@@ -1,0 +1,24 @@
+{
+  "mainControl":
+  {
+    "controlType": "Start",
+    "info":{
+    "nodeName": "开始",
+    "scriptPath":"",
+    "radius": 5,
+    "titleSize": [ 0, 0, 120, 40 ],
+    "backgroundSize": [ 0, 0, 120, 100 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 5, 20, 20 ],
+      "portIndex": 0,
+      "portType": "ProgramControlOutput"
+      }
+    }
+  ]
+}

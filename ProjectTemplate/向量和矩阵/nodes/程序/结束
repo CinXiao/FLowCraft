@@ -1,0 +1,43 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "结束",
+    "scriptPath":"",
+    "radius": 10,
+    "titleSize": [ 0, 0, 120, 40 ],
+    "backgroundSize": [ 0, 0, 120, 120 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 5, 20, 20 ],
+      "portIndex": 0,
+      "portType": "ProgramControlInput"
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataInput",
+        "portDataType": "Vector"
+      }
+    },      {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 75, 20, 20 ],
+      "portIndex": 2,
+      "portType": "DataInput",
+      "portDataType": "Float"
+      }
+    }
+
+
+  ]
+}

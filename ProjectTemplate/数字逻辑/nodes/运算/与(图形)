@@ -1,0 +1,57 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+      "nodeName": "",
+      "scriptPath":"script/运算/And.xs", 
+      "backgroundSize": [ 0, 0, 100, 90 ],
+      "normalBorder": "#00000000",
+      "selectBorder": "#ffffff",
+      "normalBrush": "#ffffff",
+      "selectBrush": "#ffffff",
+      "radius": 10,
+      "backgroundColor1": "#00000000",
+      "backgroundColor2": "#00000000",
+      "titleBackgroundColor1": "#00000000",
+      "titleBackgroundColor2": "#00000000",
+      "backgroundColorGradient": true,
+      "titleBackgroundColorGradient": true,
+      "titleSize": [ 0, 0, 120, 40 ]
+      }
+  },
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 3, 25, 15, 15 ],
+        "portIndex": 1,
+        "portType": "DataInput",
+        "portDataType": "Int"
+      }
+    }, {
+      "controlType": "PictureBox",
+      "info":{
+      "imageSize": [ 5, 5, 20, 20 ],
+      "imagePath": "/Image/and.png"
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":{
+    "portSize": [ 3, 72, 15, 15 ],
+      "portIndex": 2,
+      "portType": "DataInput",
+      "portDataType": "Int"
+      }
+    }, {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 96, 45, 15, 15 ],
+      "portIndex": 3,
+      "portType": "DataOutput",
+      "portDataType": "Int"
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "坐标点图",
+    "scriptPath":"script/显示/示波器.xs",
+    "backgroundSize": [ 0, 0, 400, 200 ],
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "radius": 10,
+    "backgroundColor1": "#FF000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#008080",
+    "titleBackgroundColor2": "#00000000",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "titleSize": [ 0, 0, 400, 40 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Chart",
+      "info": {
+        "chatyType":"SquareWave",
+        "chartSize":[45,45,320,150],
+        "axisColor":"#008B00",
+        "lineColor":"#008B00",
+        "drawPoint":true,
+        "drawLine":true,
+        "pointColor":"#008B00",
+        "pointSize":1,
+        "chartIndex":1
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":    {
+        "portSize": [ 5, 5, 20, 20 ],
+        "portIndex": 0,
+        "portType": "ProgramControlInput"
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":    {
+        "portSize": [ 375, 5, 20, 20 ],
+        "portIndex": 0,
+        "portType": "ProgramControlOutput"
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":    {
+        "portSize": [ 5, 45, 20, 20 ],
+      "portIndex": 1,
+      "portType": "DataInput",
+      "portDataType": "Int"
+      }
+    },
+    {
+      "controlType": "Button",
+      "info":    {
+        "buttonSize":[5,75,35,35],
+      "buttonText":"清空数据",
+      "buttonTextColor":"#ffffff",
+      "buttonTextPressColor":"",
+      "buttonColor":"#2f2f2f",
+      "buttonPressColor":"", 
+      "buttonIndex":1
+      }
+    }
+  ]
+}

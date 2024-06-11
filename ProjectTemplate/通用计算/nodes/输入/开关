@@ -1,0 +1,48 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "开关",
+    "scriptPath":"script/输入/开关.xs",
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "backgroundColor1": "#FF000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#00000000",
+    "titleBackgroundColor2": "#00000000",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "radius": 10,
+    "titleSize": [ 0, 0, 120, 40 ],
+    "backgroundSize": [ 0, 0, 120, 70 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataOutput",
+        "portDataType": "Int"
+      }
+    },    
+    {
+      "controlType": "SwitchButton",
+      "info":{
+      "switchButtonSize": [ 5, 45, 40, 20 ],
+      "buttonColor":"#303030",
+      "buttonOpenColor":"#4C84E5",
+      "switchColor":"#E4E2E2",
+      "buttonIndex":1,
+      "text":""
+      }
+    }
+  ]
+
+  
+}

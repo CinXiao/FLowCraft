@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Launcher</class>
+ <widget class="QDialog" name="Launcher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>启动</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: white;
+}
+
+
+QLabel {
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+QLabel#titleLabel {
+    font: 20px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
+    padding: 0;
+}
+
+QLabel#windowTitleLabel {
+    font: 12px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
+    padding: 6px 6px;
+    background-color: rgb(243, 243, 243);
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(147, 147, 147);
+
+
+font: 30pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>FlowCraft</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="styleSheet">
+        <string notr="true">QTabWidget {  
+    border: none;  
+}  
+  
+QTabWidget::pane {  
+    border: none;  
+    top: 20px;  
+}  
+  
+QTabBar {  
+    border: none;  
+}  
+  
+QTabBar::tab {  
+    border: none;  
+    color: #333333;  
+    background-color: white;
+    font-family: &quot;微软雅黑&quot;;  
+    font-size: 14px;  
+    padding: 10px 15px; /* 使用正值内填充 */  
+    margin-right: 10px; /* 根据需要调整标签之间的间距 */  
+}  
+  
+QTabBar::tab:selected, QTabBar::tab:hover {  
+    border-bottom: 2px solid #618BE5;  
+    color: #618BE5;  
+    background: transparent;  
+}  
+  
+QTabWidget::tab-bar {  
+    alignment: left;  
+    top: 5px;  
+    left: 5px;  
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>本地项目</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QListWidget" name="projectList">
+           <property name="styleSheet">
+            <string notr="true">QListWidget::item 
+{ 
+	min-height: 90px;
+	 max-height: 120px; 
+}
+QListWidget {  
+    border: none;  
+    outline: none;  
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>案列项目</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>0</height>
+        </size>
+       </property>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>281</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.073);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+    border-radius: 5px;
+
+	font: 14pt &quot;Microsoft YaHei UI&quot;;
+    padding: 5px 12px 6px 12px;
+    outline: none;
+}
+
+
+QPushButton[isPlaceholderText=true] {
+    color: rgba(0, 0, 0, 0.6063);
+}
+
+QPushButton[hasIcon=false] {
+    padding: 5px 12px 6px 12px;
+}
+
+QPushButton[hasIcon=true] {
+    padding: 5px 12px 6px 36px;
+}
+
+
+QPushButton:hover {
+    background: rgba(249, 249, 249, 0.5);
+}
+
+QPushButton:pressed{
+    color: rgba(0, 0, 0, 0.63);
+    background: rgba(249, 249, 249, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.073);
+}
+
+QPushButton:disabled {
+    color: rgba(0, 0, 0, 0.36);
+    background: rgba(249, 249, 249, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>打开项目</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(147, 147, 147);
+
+font: 16pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>开始使用</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CreatProject">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>281</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.073);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+    border-radius: 5px;
+	font: 14pt &quot;Microsoft YaHei UI&quot;;
+    padding: 5px 12px 6px 12px;
+    outline: none;
+}
+
+
+QPushButton[isPlaceholderText=true] {
+    color: rgba(0, 0, 0, 0.6063);
+}
+
+QPushButton[hasIcon=false] {
+    padding: 5px 12px 6px 12px;
+}
+
+QPushButton[hasIcon=true] {
+    padding: 5px 12px 6px 36px;
+}
+
+
+QPushButton:hover {
+    background: rgba(249, 249, 249, 0.5);
+}
+
+QPushButton:pressed{
+    color: rgba(0, 0, 0, 0.63);
+    background: rgba(249, 249, 249, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.073);
+}
+
+QPushButton:disabled {
+    color: rgba(0, 0, 0, 0.36);
+    background: rgba(249, 249, 249, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>创建新项目</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

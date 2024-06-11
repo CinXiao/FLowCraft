@@ -1,0 +1,53 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "结束",
+    "scriptPath":"",
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "backgroundColor1": "#FF000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#AA800000",
+    "titleBackgroundColor2": "#00000000",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "radius": 10,
+    "titleSize": [ 0, 0, 120, 40 ],
+    "backgroundSize": [ 0, 0, 120, 150 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 5, 20, 20 ],
+      "portIndex": 0,
+      "portType": "ProgramControlInput"
+      }
+    },
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataInput",
+        "portDataType": "Int"
+      }
+    },      {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 75, 20, 20 ],
+      "portIndex": 2,
+      "portType": "DataInput",
+      "portDataType": "Int"
+      }
+    }
+
+
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/矩阵/33矩阵输入.xs",
+	"name":"3×3矩阵输入",
+	"w":150,
+	"h":155,
+	"th":50,
+	"tw":150,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+
+
+{
+      "type": "Text",
+      "info": {
+    	"size":[5, 65, 20, 20],
+	"backColor":"#222222",
+	"index":0,
+	"text":"0"
+      }
+  },{
+      "type": "Text",
+      "info": {
+    	"size":[45, 65, 20, 20],
+	"backColor":"#222222",
+	"index":1,
+	"text":"0"
+      }
+  },{
+      "type": "Text",
+      "info": {
+    	"size":[85, 65, 20, 20],
+	"backColor":"#222222",
+	"index":2,
+	"text":"0"
+      }
+  },{
+      "type": "Text",
+      "info": {
+    	"size":[5, 95, 20, 20],
+	"backColor":"#222222",
+	"index":3,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[45, 95, 20, 20],
+	"backColor":"#222222",
+	"index":4,
+	"text":"0"
+      }
+    },{
+      "type": "Text",
+      "info": {
+    	"size":[85, 95, 20, 20],
+	"backColor":"#222222",
+	"index":5,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[5, 125, 20, 20],
+	"backColor":"#222222",
+	"index":6,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[45, 125, 20, 20],
+	"backColor":"#222222",
+	"index":7,
+	"text":"0"
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[85, 125, 20, 20],
+	"backColor":"#222222",
+	"index":8,
+	"text":"0"
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[125, 45, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataOutput",
+	"index":1
+	
+      }
+    }
+
+  ]
+}

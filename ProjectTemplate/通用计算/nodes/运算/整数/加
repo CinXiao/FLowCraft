@@ -1,0 +1,53 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+      "nodeName": "加",
+      "scriptPath":"script/运算/Add.xs",
+      "backgroundSize": [ 0, 0, 120, 100 ],
+      "normalBorder": "#00000000",
+      "selectBorder": "#ffffff",
+      "normalBrush": "#ffffff",
+      "selectBrush": "#ffffff",
+      "radius": 10,
+      "backgroundColor2": "#99000000",
+      "titleBackgroundColor1": "#00000000",
+      "titleBackgroundColor2": "#00000000",
+      "backgroundColorGradient": true,
+      "titleBackgroundColorGradient": true,
+      "titleSize": [ 0, 0, 120, 40 ]
+      }
+  },
+  "controls":[
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataInput",
+        "portDataType": "Int"
+      }
+    },    
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 5, 75, 20, 20 ],
+        "portIndex": 2,
+        "portType": "DataInput",
+        "portDataType": "Int"
+      }
+    },    
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 65, 20, 20 ],
+        "portIndex": 3,
+        "portType": "DataOutput",
+        "portDataType": "Int"
+      }
+    }
+  ]
+  
+}
+

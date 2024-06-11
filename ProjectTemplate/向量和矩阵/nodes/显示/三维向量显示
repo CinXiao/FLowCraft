@@ -1,0 +1,83 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/向量/三维向量显示.xs",
+	"name":"三维向量显示",
+	"w":150,
+	"h":160,
+	"th":50,
+	"tw":150,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+{
+      "type": "Label",
+      "info": {
+	"size":[5,75,20,20],
+	"text":"X"
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[30, 75, 80, 20],
+	"backColor":"#666666",
+	"index":1,
+	"text":"0"
+      }
+    },
+{
+      "type": "Label",
+      "info": {
+	"size":[5,105,20,20],
+	"text":"Y"
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[30, 105, 80, 20],
+	"backColor":"#666666",
+	"text":"0",
+	"index":2
+      }
+    },
+{
+      "type": "Label",
+      "info": {
+	"size":[5,135,20,20],
+	"text":"Z"
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[30, 135, 80, 20],
+	"backColor":"#666666",
+	"index":3,
+	"text":"0"
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[125, 45, 20, 20],
+	"dataType":"Vector",
+	"portType":"DataOutput",
+	"index":2
+	
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[5, 45, 20, 20],
+	"dataType":"Vector",
+	"portType":"DataInput",
+	"index":1
+	
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/矩阵/33矩阵显示.xs",
+	"name":"3×3矩阵显示",
+	"w":180,
+	"h":160,
+	"th":50,
+	"tw":180,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+ {
+      "type": "Label",
+      "info": {
+    	"size":[5, 75, 50, 20],
+	"backColor":"#666666",
+	"index":1,
+	"text":"M1"
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[5, 105, 50, 20],
+	"backColor":"#666666",
+	"text":"M2",
+	"index":2
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[5, 135, 50, 20],
+	"backColor":"#666666",
+	"index":3,
+	"text":"M3"
+      }
+    },
+ {
+      "type": "Label",
+      "info": {
+    	"size":[65, 75, 50, 20],
+	"backColor":"#666666",
+	"index":4,
+	"text":"M4"
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[65, 105, 50, 20],
+	"backColor":"#666666",
+	"text":"M5",
+	"index":5
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[65, 135, 50, 20],
+	"backColor":"#666666",
+	"index":6,
+	"text":"M6"
+      }
+    },
+ {
+      "type": "Label",
+      "info": {
+    	"size":[120, 75, 50, 20],
+	"backColor":"#666666",
+	"index":7,
+	"text":"M7"
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[120, 105, 50, 20],
+	"backColor":"#666666",
+	"text":"M8",
+	"index":8
+      }
+    }, {
+      "type": "Label",
+      "info": {
+    	"size":[120, 135, 50, 20],
+	"backColor":"#666666",
+	"index":9,
+	"text":"M9"
+      }
+    },
+
+    {
+      "type": "Port",
+      "info": {
+    	"size":[155, 45, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataOutput",
+	"index":2
+	
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[5, 45, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataInput",
+	"index":1
+	
+      }
+    }
+  ]
+}

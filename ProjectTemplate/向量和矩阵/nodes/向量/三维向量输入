@@ -1,0 +1,76 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/向量/三维向量输入.xs",
+	"name":"三维向量输入",
+	"w":150,
+	"h":140,
+	"th":50,
+	"tw":150,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+{
+      "type": "Label",
+      "info": {
+	"size":[5,45,20,20],
+	"text":"X",
+	"index":1
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[30, 45, 20, 20],
+	"backColor":"#222222",
+	"index":1,
+	"text":"0"
+      }
+    },
+{
+      "type": "Label",
+      "info": {
+	"size":[5,75,20,20],
+	"text":"Y",
+	"index":2
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[30, 75, 20, 20],
+	"backColor":"#222222",
+	"index":2,
+	"text":"0"
+      }
+    },
+{
+      "type": "Label",
+      "info": {
+	"size":[5,105,20,20],
+	"text":"Z",
+	"index":3
+      }
+    }, {
+      "type": "Text",
+      "info": {
+    	"size":[30, 105, 20, 20],
+	"backColor":"#222222",
+	"index":3,
+	"text":"0"
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[125, 45, 20, 20],
+	"dataType":"Vector",
+	"portType":"DataOutput",
+	"index":1
+	
+      }
+    }
+  ]
+}

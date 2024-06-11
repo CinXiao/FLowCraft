@@ -1,0 +1,37 @@
+{
+
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "",
+    "scriptPath":"",
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "backgroundColor1": "#99000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#00000000",
+    "titleBackgroundColor2": "#00000000",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "radius": 10,
+    "titleSize": [ 0, 5, 20, 20 ],
+    "backgroundSize": [ 0, 0, 20, 20 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+    "controlType": "Text",
+    "info":{
+      "inputSize": [ 3, 25, 50, 20 ],
+      "backgroundColor":"#000000",
+      "textColor":"#ffffffff",
+      "text":"黑白文本",
+      "inputIndex":1
+    }
+    }
+  ]
+}

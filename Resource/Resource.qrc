@@ -1,0 +1,54 @@
+<RCC>
+    <qresource prefix="/NodeData">
+        <file>icon/run.png</file>
+        <file>icon/stop.png</file>
+        <file>icon/save.png</file>
+        <file>icon/saveAs.png</file>
+        <file>icon/clsoe.png</file>
+        <file>icon/folder.png</file>
+        <file>icon/nodes.png</file>
+        <file>icon/deleteLine.png</file>
+        <file>icon/clock.png</file>
+        <file>icon/deleteNode.png</file>
+        <file>icon/setting.png</file>
+        <file>icon/new.png</file>
+        <file>icon/select.png</file>
+        <file>icon/logo.png</file>
+        <file>icon/photo.jpg</file>
+        <file>icon/help.png</file>
+        <file>icon/runonce.png</file>
+        <file>icon/check.png</file>
+        <file>icon/node.png</file>
+        <file>icon/picturebox.png</file>
+        <file>icon/label.png</file>
+        <file>icon/switch.png</file>
+        <file>icon/button.png</file>
+        <file>icon/port.png</file>
+        <file>icon/chart.png</file>
+        <file>icon/code.png</file>
+        <file>icon/picture.png</file>
+        <file>icon/json.png</file>
+        <file>icon/copy.png</file>
+        <file>icon/delete.png</file>
+        <file>icon/deleteLine.psd</file>
+        <file>icon/deleteNode.psd</file>
+        <file>icon/edit.png</file>
+        <file>icon/paste.png</file>
+        <file>icon/rename.png</file>
+        <file>icon/switch_open.png</file>
+        <file>icon/switch_close.png</file>
+        <file>icon/radiobutton_false.png</file>
+        <file>icon/radiobutton_true.png</file>
+    </qresource>
+    <qresource prefix="/HelpFile">
+        <file>HelpPage/index.html</file>
+        <file>HelpPage/Pages/Softwareinterface.html</file>
+        <file>HelpPage/style.css</file>
+        <file>HelpPage/imgs/logo.png</file>
+        <file>HelpPage/imgs/de.png</file>
+        <file>HelpPage/imgs/g.png</file>
+        <file>HelpPage/imgs/how.png</file>
+        <file>HelpPage/imgs/use.png</file>
+        <file>HelpPage/imgs/label.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,44 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+      "nodeName": "输入",
+      "scriptPath":"script/输入/Input_1.xs",    
+      "backgroundSize": [ 0, 0, 120, 70 ],
+      "normalBorder": "#00000000",
+      "selectBorder": "#ffffff",
+      "normalBrush": "#ffffff",
+      "selectBrush": "#ffffff",
+      "radius": 10,
+      "backgroundColor2": "#99000000",
+      "titleBackgroundColor1": "#00000000",
+      "titleBackgroundColor2": "#00000000",
+      "backgroundColorGradient": true,
+      "titleBackgroundColorGradient": true,
+      "titleSize": [ 0, 0, 120, 40 ]
+      }
+  },
+  "controls":[
+    {
+      "controlType": "Text",
+      "info":{
+        "inputSize": [ 5, 45, 50, 20 ],
+        "backgroundColor":"#fffff99",
+        "textColor":"#ffffffff",
+        "text":"0",
+        "inputIndex":1
+      }
+    },    
+    {
+      "controlType": "Port",
+      "info":{
+        "portSize": [ 90, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataOutput",
+        "portDataType": "String"
+      }
+    }
+  ]
+  
+}

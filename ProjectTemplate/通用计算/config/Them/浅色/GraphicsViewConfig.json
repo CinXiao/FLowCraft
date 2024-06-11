@@ -1,0 +1,10 @@
+{
+
+  "BackgroundConfig": {
+    "gridEnable":true,
+    "gridSize": 30,
+    "gridWidth":1,
+    "gridColor": "#B6B6B6",
+    "backColor": "#FDFEFD"
+  }
+}

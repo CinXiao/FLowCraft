@@ -1,0 +1,43 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/运算/减.xs",
+	"name":"矩阵减",
+	"w":140,
+	"h":120,
+	"th":50,
+	"tw":140,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+        {
+      "type": "Port",
+      "info": {
+    	"size":[5, 45, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataInput",
+	"index":1
+      }
+    },   {
+      "type": "Port",
+      "info": {
+    	"size":[5, 75, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataInput",
+	"index":2
+      }
+    },{
+      "type": "Port",
+      "info": {
+    	"size":[115, 60, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataOutput",
+	"index":3
+      }
+    }
+  ]
+}

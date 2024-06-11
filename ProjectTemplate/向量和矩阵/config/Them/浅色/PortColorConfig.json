@@ -1,0 +1,20 @@
+{
+
+  "PortDataTypeColor": {
+    "Int": "#FF800080",
+    "Float": "#FF0000CC",
+    "Bool": "#FF0000",
+    "String": "#FF00FF00",
+    "Bit": "#887B68EE",
+    "Vector": "#FFA500FF",
+    "Matrix": "#ffd93a"
+  },
+  "PortTypeColor": {
+    "DataInput": "#000000",
+    "DataOutput": "#000000",
+    "TriggerInput": "#88A9A9A9",
+    "TriggerOutput": "#88A9A9A9",
+    "ProgramControlInput": "#FFFFFF",
+    "ProgramControlOutput": "#FFFFFF"
+  }
+}

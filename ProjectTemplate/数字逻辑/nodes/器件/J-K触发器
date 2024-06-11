@@ -1,0 +1,65 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    "nodeName": "JK触发器",
+    "scriptPath":"script/器件/JK触发器.xs",
+    "backgroundSize": [ 0, 0, 135, 130 ],
+    "normalBorder": "#00000000",
+    "selectBorder": "#ffffff",
+    "normalBrush": "#ffffff",
+    "selectBrush": "#ffffff",
+    "radius": 10,
+    "backgroundColor1": "#FF000000",
+    "backgroundColor2": "#99000000",
+    "titleBackgroundColor1": "#FF800080",
+    "titleBackgroundColor2": "#00000000",
+    "backgroundColorGradient": true,
+    "titleBackgroundColorGradient": true,
+    "titleSize": [ 0, 0, 135, 40 ]
+      }
+  }
+  ,
+  "controls":[
+    {
+      "controlType": "Port",
+      "info": {
+        "portSize": [ 5, 45, 20, 20 ],
+        "portIndex": 1,
+        "portType": "DataInput",
+        "portDataType": "Int"
+      }
+    }, {
+      "controlType": "Port",
+      "info": {
+        "portSize": [ 105, 45, 20, 20 ],
+      "portIndex": 2,
+      "portType": "DataOutput",
+      "portDataType": "Int"
+      }
+    },   
+    {
+      "controlType": "SwitchButton",
+      "info": {
+        "switchButtonSize": [ 5, 75, 40, 20 ],
+      "buttonColor":"#303030",
+      "buttonOpenColor":"#4C84E5",
+      "switchColor":"#E4E2E2",
+      "buttonIndex":1,
+      "text":"J"
+      }
+    },   
+     {
+      "controlType": "SwitchButton",
+      "info": {
+        "switchButtonSize": [ 5, 100, 40, 20 ],
+        "buttonColor":"#303030",
+        "buttonOpenColor":"#4C84E5",
+        "switchColor":"#E4E2E2",
+        "buttonIndex":2,
+        "text":"K"
+      }
+    }
+  ]
+}

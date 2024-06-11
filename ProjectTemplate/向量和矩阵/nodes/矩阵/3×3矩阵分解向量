@@ -1,0 +1,54 @@
+{
+  "mainControl":
+  {
+    "controlType": "Node",
+    "info":{
+    	"script":"script/矩阵/33矩阵分解向量.xs",
+	"name":"3×3矩阵分解",
+	"w":150,
+	"h":140,
+	"th":50,
+	"tw":150,
+	"radius":5
+      }
+  }
+  ,
+  "controls":[
+ {
+      "type": "Port",
+      "info": {
+    	"size":[5, 45, 20, 20],
+	"dataType":"Matrix",
+	"portType":"DataInput",
+	"index":1
+      }
+    },
+    {
+      "type": "Port",
+      "info": {
+    	"size":[125, 45, 20, 20],
+	"dataType":"Vector",
+	"portType":"DataOutput",
+	"index":2
+	
+      }
+    },{
+      "type": "Port",
+      "info": {
+    	"size":[125, 75, 20, 20],
+	"dataType":"Vector",
+	"portType":"DataOutput",
+	"index":3
+      }
+    }, {
+      "controlType": "Port",
+      "info": {
+        "portSize": [125, 105, 20, 20 ],
+      "portType": "DataOutput",
+      "portDataType": "Vector",
+	"index":4
+      }
+    }
+   
+  ]
+}
